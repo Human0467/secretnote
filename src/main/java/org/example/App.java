@@ -34,7 +34,7 @@ public class App {
         app
                 .get("/", Controller::renderForm)
                 .post("/", Controller::storeMessage)
-                .get("/{messageID}", Controller::retrieveMessage);
+                .get("/{noteId}", Controller::retrieveMessage);
     }
 
     public Javalin javalinApp() {
