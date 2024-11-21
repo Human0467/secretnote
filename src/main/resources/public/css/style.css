@@ -1,0 +1,52 @@
+body {
+    background-color: #f1f1f1;
+    text-align: center;
+    margin:0;
+    padding:0;
+    font-family: "Helvetica Neue", Helvetica, Verdana, Arial, Sans, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.button {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    color: #333;
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    margin: 0;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.primary_button {
+    background-color: #960000;
+    border-radius: 5px;
+    border: 1px solid #960000;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    margin: 0;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.top_bar {
+    list-style-type: none;
+    padding: 0 20px;
+    margin: 40;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(255, 0, 0);
+    line-height: 45px;
+}
+
+.note_contents{
+    font-style: italic;
+    color:#555555;
+}

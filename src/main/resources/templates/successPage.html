@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h2  class="link" th:text="'localhost:8081/' + ${noteId}"></h2>
+    <ul class="top_bar">
+        <li>SecretNote</li>
+    </ul>
+    <p>
+        <h3>Success! Note can be retrieved here:</h3>
+    </p>
+    <a th:href="@{'http://localhost:8081/' + ${noteId}}">
+        <h2  class="link" th:text="'localhost:8081/' + ${noteId}"></h2>
+    </a>
+<p>
+    <h3>Link will only work once!</h3>
+</p>
 </body>
 </html>

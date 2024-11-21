@@ -20,12 +20,12 @@ public class App {
 
         app = Javalin.create(
                 config -> {
-                    //config.staticFiles.add("/public", Location.CLASSPATH);
-                    var resolver = new ClassLoaderTemplateResolver();
+                    config.staticFiles.add("/public", Location.CLASSPATH);
+                    ClassLoaderTemplateResolver resolver = new ClassLoaderTemplateResolver();
                     resolver.setPrefix("/templates/");
                     resolver.setSuffix(".html");
                     resolver.setTemplateMode("HTML");
-                    var engine = new TemplateEngine();
+                    TemplateEngine engine = new TemplateEngine();
                     engine.setTemplateResolver(resolver);
                     config.fileRenderer(new JavalinThymeleaf(engine));
                 }

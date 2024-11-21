@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 <body>
+    <ul class="top_bar">
+        <li>SecretNote</li>
+    </ul>
+
+    <h2>New note</h2>
     <form class="messageForm" action="/" method="POST">
-        <label for="note">New note</label>
-        <input type="text" name="note" id="note" />
+        <textarea id="note" name="note" rows="20" cols="80"></textarea>
+        <p></p>
         <button type="submit">Create note</button>
     </form>
 
